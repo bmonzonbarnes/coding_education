@@ -4,12 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Recipes</title>
+    <link rel="stylesheet" href="index_style/index.css">
 </head>
 <body>
-    <h1>Recipes for your tummy</h1>
-    <ul>
-        <li><a href="Recipe/gnocchi.html" target="_blank" rel="noreferrer">Gnocchi</a></li>
-        <li><a href="Recipe/pizza.html" target="_blank" rel="noreferrer">Pizza</a></li>
-    </ul>
+    <div class="banner hero">
+        <h1>Recipes for your tummy</h1>
+    </div>
+
+    <div class="carousel">
+        <!--This section is going be a carousel for recipes similar to a blog card with a description and link-->
+        <ul>
+            <li><a href="Recipe/gnocchi.html" target="_blank" rel="noreferrer">Gnocchi</a></li>
+            <li><a href="Recipe/pizza.html" target="_blank" rel="noreferrer">Pizza</a></li>
+        </ul>
+    </div>
+
+    <div class="feedback">
+        <form>
+            <label for="favorite">Which was your favorite recipe?</label>
+            <select name="list-of-recipes" id="fav-recipe">
+                <option></option>
+                <option value="gnocchi">Gnocchi</option>
+                <option value="pizza">Pizza</option>
+            </select>
+            <label for="improve-food">What would make that recipe better:</label>
+            <input type="text" maxlength="150" placeholder="enter text here...">
+        </form>
+    </div>
+
+    <div class="newsletter">
+        <label for="email_subscription">Subscribe for more meal ideas:</label>
+        <input type="email" id="subscribing_email" placeholder="email@website.com"> 
+        <input type="submit" >
+    </div>
+
 </body>
 </html>
